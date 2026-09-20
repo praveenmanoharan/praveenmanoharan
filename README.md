@@ -6,6 +6,8 @@
 
 - [linkedin](https://www.linkedin.com/in/praveenkumarmanoharan/)
 
+- [Resume](https://praveenmanoharan.github.io/praveenmanoharan/)
+
 <!---
 praveenmanoharan/praveenmanoharan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
