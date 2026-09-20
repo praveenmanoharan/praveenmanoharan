@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
-- (linkedin)[https://www.linkedin.com/in/praveenkumarmanoharan/]
+- [linkedin](https://www.linkedin.com/in/praveenkumarmanoharan/)
 
 <!---
 praveenmanoharan/praveenmanoharan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
