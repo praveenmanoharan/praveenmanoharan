@@ -12,18 +12,22 @@
   .page { max-width:980px; margin:30px auto; background:#fff; padding:48px 58px; box-shadow:0 4px 20px rgba(0,0,0,.08); }
   header { text-align:center; border-bottom:2px solid var(--accent); padding-bottom:18px; }
   h1 { margin:0; font-size:34px; color:var(--accent); }
-  .contact { margin-top:8px; color:var(--muted); font-size:14px; }
   h2 { color:var(--accent); font-size:17px; letter-spacing:.8px; border-bottom:1px solid var(--line); padding-bottom:5px; margin:28px 0 12px; }
+  h3 { margin:18px 0 8px; font-size:16px; color:#263238; }
+  .contact { margin-top:8px; color:var(--muted); font-size:14px; }
   .summary { font-size:15px; }
   .skills { display:grid; grid-template-columns:1fr 1fr; gap:7px 28px; padding:0; list-style:none; }
   .skills li::before { content:"• "; color:var(--accent); font-weight:bold; }
   .job { margin:18px 0 0; }
-  .job-title { font-size:16px; font-weight:bold; color:#263238; }
+  .job-header { display:flex; flex-wrap:wrap; gap:6px; align-items:center; font-size:16px; font-weight:bold; color:#263238; }
   .company { color:var(--accent); font-weight:bold; }
   .dates { color:var(--muted); }
   ul { margin-top:7px; padding-left:20px; }
   li { margin-bottom:5px; }
+  .resume-link { display:inline-block; margin-top:14px; padding:10px 18px; background:var(--accent); color:#fff; text-decoration:none; border-radius:6px; font-weight:bold; }
+  .resume-link:hover { opacity:0.9; }
   footer { margin-top:35px; padding-top:12px; border-top:1px solid var(--line); text-align:center; color:var(--muted); font-size:12px; }
+  a { color:var(--accent); }
   @media (max-width:700px) {
     .page { margin:0; padding:28px 22px; box-shadow:none; }
     h1 { font-size:27px; }
@@ -40,24 +44,40 @@
 <header>
   <h1>Praveen Kumar Manoharan</h1>
   <div class="contact">praveen83.7@gmail.com &nbsp;|&nbsp; 201-706-0803</div>
+  <a class="resume-link" href="resume.md" target="_blank" rel="noopener noreferrer">View Resume</a>
 </header>
 
 <section>
 <h2>PROFESSIONAL SUMMARY</h2>
-<p class="summary">Technology leader and software architect with 20+ years of experience spanning software development, technical leadership, system analysis, solution design, and technical delivery. Strong background in Java/J2EE, REST/SOAP services, microservices, cloud migration, CI/CD, enterprise integration, and Agile delivery. Experienced in mentoring teams and leading end-to-end application design, development, testing, and deployment.</p>
+<p class="summary">Technology leader and software architect with 20+ years of experience in architecture, engineering leadership, solution design, and enterprise application delivery. Proven expertise in translating business requirements into scalable system architecture, high-level and low-level designs, REST-based and event-driven API patterns, microservices, and large-scale enterprise integrations. Strong track record in application modernization, cloud migration, technical governance, cross-functional leadership, effort estimation, and yearly planning across Agile delivery teams.</p>
 </section>
 
 <section>
-<h2>CORE TECHNOLOGIES &amp; EXPERTISE</h2>
+<h2>TECHNOLOGIES &amp; EXPERTISE</h2>
 <ul class="skills">
-<li>Java, J2EE, Spring, JMS, JUnit, Mockito, EJB</li>
-<li>RESTful APIs, SOAP, JAX-RS, JAX-WS, CXF, JAXB</li>
-<li>Microservices, OpenShift, Docker, JBoss, WebSphere</li>
-<li>Oracle, SQL, PL/SQL, MySQL</li>
-<li>Maven, Gradle, ANT, Gulp, Jenkins, SonarQube</li>
-<li>AngularJS, JavaScript, HTML, CSS, jQuery, Node.js</li>
-<li>OOAD, OOPS, UML, Design Patterns, MVC</li>
-<li>Agile/Scrum, sprint planning, technical mentoring</li>
+<li>Solution architecture, enterprise application design, technical strategy, engineering leadership</li>
+<li>High-level design (HLD), low-level design (LLD), architecture reviews, tradeoff analysis, design governance</li>
+<li>REST APIs, event-driven architecture, message-based integration, API design, contract management</li>
+<li>Java, J2EE, Spring Boot, Spring MVC, JMS, EJB, JUnit, Mockito</li>
+<li>Microservices, OpenShift, Docker, JBoss, WebSphere, cloud migration, modernization</li>
+<li>Oracle, SQL, PL/SQL, MySQL, data modeling, integration patterns</li>
+<li>Maven, Gradle, ANT, Gulp, Jenkins, SonarQube, CI/CD automation</li>
+<li>React, JavaScript, AngularJS, HTML, CSS, jQuery, Node.js</li>
+<li>OOAD, OOPS, UML, Design Patterns, MVC, scalable system design</li>
+<li>Agile/Scrum, sprint planning, yearly planning, estimation, stakeholder communication, technical mentoring</li>
+<li>GitHub Copilot, agentic AI workflows, AI-assisted design and development, code acceleration, validation-driven engineering</li>
+</ul>
+</section>
+
+<section>
+<h2>GITHUB COPILOT &amp; AGENTIC AI EXPERIENCE</h2>
+<ul>
+<li>Hands-on experience using GitHub Copilot to accelerate software development through intelligent code generation, code completion, refactoring suggestions, and boilerplate reduction.</li>
+<li>Used Copilot to speed up API implementation, unit test creation, design validation, and repetitive Java/Spring development tasks while maintaining engineering quality and review discipline.</li>
+<li>Leveraged AI-assisted development workflows to prototype solutions faster, validate architecture ideas, reduce time to first draft, and improve productivity across backend and integration work.</li>
+<li>Applied agentic AI patterns for task decomposition, multi-step implementation planning, issue analysis, and iterative code generation with a strong emphasis on verification, testing, and architecture review.</li>
+<li>Used AI-assisted workflows to support service interface design, troubleshooting, test case generation, documentation improvements, and delivery acceleration in enterprise software projects.</li>
+<li>Strong understanding of the practical balance between AI-generated acceleration and human oversight, including code review, security awareness, architectural validation, performance considerations, and regression testing.</li>
 </ul>
 </section>
 
@@ -65,44 +85,52 @@
 <h2>PROFESSIONAL EXPERIENCE</h2>
 
 <div class="job">
-<div class="job-title">Senior Engineer – Online Customer Engagement <span class="company">| American Express (AMEX)</span> <span class="dates">| Jun 2015 – Present</span></div>
+<div class="job-header"><span>Senior Engineer</span><span class="company">| American Express (AMEX)</span><span class="dates">| Jun 2015 – Present</span></div>
 <ul>
-<li>Architect solution designs for online customer engagement applications, including microservice design, build, and cloud deployment.</li>
-<li>Led cloud migration initiatives moving applications from IBM WebSphere to JBoss on OpenShift.</li>
-<li>Designed and implemented REST APIs using Spring REST controllers and RESTEasy, with unit, integration, and automation test suites.</li>
-<li>Implemented CI/CD pipeline processes and integrated SonarQube for build and deployment quality metrics.</li>
-<li>Worked across SOAP and REST API management and provided end-to-end support for integration, functional, regression, system, and UAT testing.</li>
-<li>Applied Agile/Scrum practices throughout iterative development and delivery.</li>
+<li>Lead architecture and engineering for customer engagement platforms, translating business needs into scalable microservice-based solutions, API strategies, and integration architectures.</li>
+<li>Drive high-level and low-level design for enterprise applications, including service decomposition, API contracts, data flow, dependency mapping, failure handling, and deployment architecture.</li>
+<li>Design REST-based APIs and event-driven integration patterns for secure, resilient, and decoupled communication across internal and external systems.</li>
+<li>Lead cloud modernization initiatives by migrating applications from IBM WebSphere to JBoss on OpenShift, improving platform scalability, deployment efficiency, and operational resilience.</li>
+<li>Partner with product, business, and platform stakeholders to define architecture decisions, non-functional requirements, technical roadmaps, and solution tradeoffs.</li>
+<li>Contribute to yearly planning, capacity planning, and engineering effort estimation by evaluating scope, dependencies, risks, and delivery sequencing across multiple workstreams.</li>
+<li>Develop Spring-based service implementations, API layers, and automation strategies covering unit, integration, and regression testing.</li>
+<li>Support SOAP-to-REST transformations, API gateway integration, enterprise orchestration, and release readiness across environments.</li>
 </ul>
 </div>
 
 <div class="job">
-<div class="job-title">Technical Lead <span class="company">| DIRECTV</span> <span class="dates">| Oct 2012 – Apr 2015</span></div>
+<div class="job-header"><span>Technical Lead</span><span class="company">| DIRECTV</span><span class="dates">| Oct 2012 – Apr 2015</span></div>
 <ul>
-<li>Led end-to-end software lifecycle activities for a responsive web application and RESTful services managing media content.</li>
-<li>Designed and developed RESTful services using Scala and Play Framework, with reusable components using Spring and Hibernate.</li>
-<li>Developed web services integrating with multiple systems and produced high- and low-level software design documentation.</li>
-<li>Developed database modules, stored procedures, and triggers for business logic; participated in sprint planning, estimation, and task creation.</li>
+<li>Owned end-to-end software lifecycle for a responsive web application and RESTful services managing media content, from requirement analysis through architecture, implementation, testing, and production support.</li>
+<li>Created high-level and low-level designs for distributed web and service components using Scala, Play Framework, Spring, and Hibernate to ensure maintainability, scalability, and performance.</li>
+<li>Designed and developed REST services and integration components connecting multiple backend systems, including data exchange, contract validation, error handling, and transaction boundaries.</li>
+<li>Produced architecture and design documentation covering service responsibilities, class interactions, database structures, deployment architecture, and operational considerations.</li>
+<li>Participated in sprint planning, backlog prioritization, effort estimation, and cross-functional technical discussions to align delivery with business goals.</li>
+<li>Worked closely with product and engineering teams to define application behavior, support business workflows, and maintain platform compatibility across UI and middleware layers.</li>
+<li>Built database modules, stored procedures, and triggers to support business logic and operational requirements.</li>
 </ul>
 </div>
 
 <div class="job">
-<div class="job-title">Technical Lead <span class="company">| British Telecom</span> <span class="dates">| Jul 2008 – Oct 2012</span></div>
+<div class="job-header"><span>Technical Lead</span><span class="company">| British Telecom</span><span class="dates">| Jul 2008 – Oct 2012</span></div>
 <ul>
-<li>Led enhancements across workforce management, planning, forecasting, people management, and reporting applications.</li>
-<li>Planned and executed migration of 12 applications from WebLogic 8/Oracle 9i to WebLogic 11g/Oracle 11g.</li>
-<li>Designed hardware architecture and failover strategy and led Oracle/WebLogic upgrade activities.</li>
-<li>Developed core Java/EJB business logic and batch processes for cross-database data migration.</li>
-<li>Coordinated offshore delivery, weekly project planning, monthly metrics, release documentation, and quality practices.</li>
+<li>Led design and enhancement activities for workforce management, planning, forecasting, people management, and reporting applications across distributed enterprise platforms.</li>
+<li>Planned and executed migration of 12 applications from WebLogic 8/Oracle 9i to WebLogic 11g/Oracle 11g, including architecture assessments, risk mitigation, and operational transition planning.</li>
+<li>Designed hardware architecture and failover strategies for critical systems and led Oracle/WebLogic upgrade initiatives to improve scalability and reliability.</li>
+<li>Developed core Java/J2EE business logic, EJB components, and batch processing workflows for cross-database migration and transformation scenarios.</li>
+<li>Worked on solution design for enterprise integration, data synchronization, and application modernization to support long-term platform stability.</li>
+<li>Supported yearly planning, effort estimation, release planning, and cross-team coordination to maintain delivery predictability and quality.</li>
+<li>Coordinated offshore delivery, release documentation, project metrics, and engineering standards while ensuring design consistency across teams.</li>
 </ul>
 </div>
 
 <div class="job">
-<div class="job-title">Developer <span class="company">| Thomson Education</span> <span class="dates">| Sep 2004 – Jul 2008</span></div>
+<div class="job-header"><span>Developer</span><span class="company">| Thomson Education</span><span class="dates">| Sep 2004 – Jul 2008</span></div>
 <ul>
-<li>Supported maintenance and enhancements for thomsonedu.com, including online book sales for K–12 and higher education.</li>
-<li>Performed requirements gathering, system design, implementation, database design, and PL/SQL development.</li>
-<li>Built web applications using Java/J2EE, Struts, Spring, Velocity, EJB, Oracle, ANT, and Maven.</li>
+<li>Supported maintenance and enhancement of thomsonedu.com, including online book sales and education platform features for K–12 and higher education audiences.</li>
+<li>Performed requirements gathering, system design, implementation, database design, and PL/SQL development to support new business functionality.</li>
+<li>Built web applications using Java/J2EE, Struts, Spring, Velocity, EJB, Oracle, ANT, and Maven, with a focus on maintainable enterprise architecture.</li>
+<li>Contributed to application design discussions, UI integration, and backend service implementation across multiple modules.</li>
 </ul>
 </div>
 </section>
@@ -112,7 +140,7 @@
 <p><strong>Bachelor of Technology (Information Technology)</strong> — University of Chennai, India</p>
 </section>
 
-<footer>© Praveen Kumar Manoharan</footer>
+<footer>© Praveen Kumar Manoharan &nbsp;|&nbsp; <a href="resume.md" target="_blank" rel="noopener noreferrer">Resume</a></footer>
 </main>
 </body>
 </html>
